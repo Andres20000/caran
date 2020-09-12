@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/destacadolayout"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="false"
+        android:src="@drawable/icono_blanco"/>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:fontFamily="sans-serif"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlanco"
+        android:background="@android:color/black"
+        android:alpha="0.8"
+        android:text="Terapia musical en casa contra la diabetes y la epatitis c (Basico)"
+        android:textSize="14sp"/>
+
+
+</FrameLayout>

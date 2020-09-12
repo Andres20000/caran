@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorAzulOscuro"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:onClick="didTapFondo">
+
+        <ImageView
+            android:layout_width="125sp"
+            android:layout_height="125sp"
+            android:background="@drawable/logo_oscuro"
+            android:id="@+id/imageView"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="15dp"
+            android:text="usuario@mail.com"
+            android:textColor="@color/colorAzulClaro"
+
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/ayudanos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="45dp"
+            android:textColor="@color/colorBlanco"
+            android:text="Ayúdanos con unos datos para finalizar el proceso"
+
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:background="@color/colorRGB242">
+            <FrameLayout
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_persona"/>
+            </FrameLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nombre"
+                android:hint="Nombre"
+                android:inputType="textEmailAddress"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal"
+                android:textColor="@color/colorNegro"
+                android:layout_marginBottom="0sp"
+                android:focusableInTouchMode="true"
+                style="@style/EditTextFondoBlanco"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:background="@color/colorRGB242">
+                    <FrameLayout
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/img_edad"/>
+
+
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/fechaNacimiento"
+                        android:hint="Fecha nacimiento"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="normal"
+                        android:gravity="center|left"
+                        android:paddingStart="5dp"
+                        android:layout_marginBottom="0sp"
+                        android:textColor="@color/colorNegro"
+                        android:onClick="didTapFecha"/>
+
+                </LinearLayout>
+                <Space
+                    android:layout_width="4dp"
+                    android:layout_height="8dp"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:onClick="tipoGenero">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/colorRGB242">
+                        <FrameLayout
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/img_persona"/>
+
+
+                        </FrameLayout>
+
+                        <EditText
+                            android:id="@+id/sexo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/EditTextFondoBlanco"
+                            android:text=""
+                            android:editable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:enabled="true"
+                            android:textColor="@color/colorNegro"
+                            android:clickable="true"
+                            android:hint="Sexo"
+                            android:onClick="tipoGenero">
+
+
+                        </EditText>
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/img_flecha_abajo_gris"
+                        android:onClick="tipoGenero"/>
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:onClick="tipoProfesion">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorRGB242">
+                <FrameLayout
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_profesion"/>
+
+
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/profesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextFondoBlanco"
+                    android:text=""
+                    android:editable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:enabled="true"
+                    android:textColor="@color/colorNegro"
+                    android:clickable="true"
+                    android:hint="Profesión"
+                    android:onClick="tipoProfesion">
+
+
+                </EditText>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_flecha_abajo_gris"
+                android:onClick="tipoGenero"/>
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:onClick="tipoEscolaridad">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorRGB242">
+                <FrameLayout
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_estudio"/>
+
+
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/escolaridad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextFondoBlanco"
+                    android:text=""
+                    android:editable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:enabled="true"
+                    android:textColor="@color/colorNegro"
+                    android:clickable="true"
+                    android:hint="Nivel de escolaridad"
+                    android:onClick="tipoEscolaridad">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_flecha_abajo_gris"
+                android:onClick="tipoGenero"/>
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:onClick="tipoInstitucion">
+
+
+            <LinearLayout
+                android:id="@+id/cuandroInstitucion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorRGB242">
+                <FrameLayout
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_institucion"/>
+
+
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/institucion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextFondoBlanco"
+                    android:text=""
+                    android:enabled="true"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorNegro"
+                    android:focusableInTouchMode="true"
+                    android:hint="Institución">
+
+
+                </EditText>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_weight="1"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:onClick="tipoCiudad">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorRGB242">
+                <FrameLayout
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_ciudad"/>
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/ciudad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextFondoBlanco"
+                    android:text=""
+                    android:editable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:enabled="true"
+                    android:textColor="@color/colorNegro"
+                    android:clickable="true"
+                    android:hint="Ciudad">
+
+
+                </EditText>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_weight="1"/>
+
+
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:id="@+id/button11"
+            style="@style/BotonRosado"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Finalizar"
+            android:onClick="didTapOKContinuar"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bigespacio"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+

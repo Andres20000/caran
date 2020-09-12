@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/coordinatorLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorBlanco"
+              android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlanco"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_btn"
+            android:orientation="horizontal"
+            android:background="@color/colorAzulClaro">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/btn_menu"
+                android:clickable="true"
+                android:onClick="didTapMenu"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlanco"
+                android:layout_weight="1"
+                android:text=""
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <ImageView
+                android:id="@+id/logoBarra"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_medical_barra"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlanco"
+                android:layout_weight="1"
+                android:text=""
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/btn_lupa_blanco"
+                android:onClick="didTapVerTodo"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:padding="1dp"
+                        android:gravity="center"
+                        android:background="@color/colorBlanco"
+                        android:text="Lo más reciente"
+                        android:textSize="15sp"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        </android.support.v4.view.ViewPager>
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tab_puntos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="30dp"
+                            app:tabBackground="@drawable/tab_punticos"
+                            app:tabGravity="center"
+                            app:tabIndicatorHeight="0dp"/>
+
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/img_lecturas_recientes"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lecturas recientes"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="bottom"/>
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/verLecturas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_marginRight="10dp"
+                            android:text="Ver todo >"
+                            android:textColor="@color/colorNegro"
+                            android:onClick="didTapVerTodoRecientes"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recientes"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_height="105dp">
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/vaciorecientes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="En este momento no tienes lecturas recientes"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/img_favoritos"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Favoritos"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="bottom"/>
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/verFavoritos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_marginRight="10dp"
+                            android:text="Ver todo >"
+                            android:textColor="@color/colorNegro"
+                            android:onClick="didTapVerTodoFavoritos"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/favoritos"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_height="105dp">
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/vaciofavoritos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="En este momento no tienes lecturas favoritas"/>
+
+                    <LinearLayout
+                        android:id="@+id/barraTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/img_top"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Top 5"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="bottom"/>
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/verTop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_marginRight="10dp"
+                            android:text="Ver todo >"
+                            android:textColor="@color/colorNegro"
+                            android:onClick="didTapVerTodoTop"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/top"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_height="105dp">
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/vaciotop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="En este momento no tienes lecturas en el top 5"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal">
+
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:text="Ver todo el contenido"
+                            android:textColor="@color/colorNegro"
+                            android:onClick="didTapVerTodo"
+                            android:textSize="15sp"/>
+
+                        <ImageView
+                            android:padding="3dp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/btn_adelante_gris"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

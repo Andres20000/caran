@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "705597889447",
+    "firebase_url": "https://caran-b43a0.firebaseio.com",
+    "project_id": "caran-b43a0",
+    "storage_bucket": "caran-b43a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705597889447:android:f353c51b4689d663",
+        "android_client_info": {
+          "package_name": "com.tactoapps.caran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705597889447-k1mar366gfmgfphk3brmqbhip2u4sgt9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tactoapps.caran",
+            "certificate_hash": "6a50a10decae699f0425afdccd00b982286de1be"
+          }
+        },
+        {
+          "client_id": "705597889447-63ul2fhst5kt5gjnun9osfof32pvnb2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC78JoP82AKPcg6hFvvXbVFUHejmsPOm5w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705597889447-63ul2fhst5kt5gjnun9osfof32pvnb2a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "705597889447-kkjf9l0qm9jsf2jss4b0g2ivkjqetrad.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tactomotion.EduPaciente"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705597889447:android:ebfbfa7274dc4e83",
+        "android_client_info": {
+          "package_name": "com.tactoapps.caran.desarrollo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705597889447-63ul2fhst5kt5gjnun9osfof32pvnb2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC78JoP82AKPcg6hFvvXbVFUHejmsPOm5w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

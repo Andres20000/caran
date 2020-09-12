@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAzulOscuro">
+
+
+    <ImageView
+        android:layout_width="155sp"
+        android:layout_height="155sp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_oscuro"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:id="@+id/linearLayout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorRGB242">
+            <FrameLayout
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_correo"/>
+
+
+            </FrameLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal"
+                android:layout_marginBottom="0sp"
+                android:textColorHint="@color/colorRGB102"
+                android:focusableInTouchMode="true"
+                style="@style/EditTextFondoBlanco"
+                />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorRGB242">
+            <FrameLayout
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_contrasena"/>
+            </FrameLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:textStyle="normal"
+                android:textColorHint="@color/colorRGB102"
+                android:focusableInTouchMode="true"
+                android:fontFamily="sans-serif"
+                style="@style/EditTextFondoBlanco"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/registro"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="9dp"
+            android:alpha="1.0"
+            android:onClick="registroCliente"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:text="Registrarme"
+            style="@style/BotonRosado"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="12sp"
+            android:onClick="didTapVerTerminos"
+            android:textColor="@color/colorBlanco"
+            android:text="Al tocar en Regístrarme estás aceptando nuestros Términos y Condiciones "
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="15dp">
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:visibility="gone"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+</RelativeLayout>
+
+

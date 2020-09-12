@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "581188876241",
+    "firebase_url": "https://educar-64fd3.firebaseio.com",
+    "project_id": "educar-64fd3",
+    "storage_bucket": "educar-64fd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581188876241:android:1827dc2d7c7f6427",
+        "android_client_info": {
+          "package_name": "com.tactoapps.educar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581188876241-q9u297qncjn8f466335jlsad4e8386es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqLG4h8NRDFTKLhCwldKKNDWSXgnvTPDU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581188876241:android:a31600ff6d3e5068",
+        "android_client_info": {
+          "package_name": "com.tactoapps.educar.desarrollo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581188876241-q9u297qncjn8f466335jlsad4e8386es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqLG4h8NRDFTKLhCwldKKNDWSXgnvTPDU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

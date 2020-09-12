@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorAzulClaro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:background="@drawable/logo_blanco"
+            android:id="@+id/imageView"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textoBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:text="Acceda a contenidos educativos y alertas médicas para la inducción y anestesia seguras."
+            android:textColor="@color/colorBlanco"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="25sp">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="29dp">
+
+
+                <TextView
+                    android:padding="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Ya tienes cuenta?"
+                    android:textColor="@color/colorBlanco"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    style="@style/BotonRosado"
+                    android:onClick="didTapIngresar"
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textSize="14sp"
+                    android:text="Inicia Sesión"
+                    android:textStyle="bold"/>
+
+
+
+
+            </LinearLayout>
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="29dp">
+
+
+                <TextView
+                    android:padding="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Eres nuevo(a)?"
+                    android:textColor="@color/colorBlanco"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    style="@style/BotonBlanco"
+                    android:onClick="didTapRegistrarse"
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Regístrate aquí"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorRGB102"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"/>
+
+
+
+
+ </LinearLayout>

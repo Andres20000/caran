@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="textSize">17sp</dimen>
+    <dimen name="textSizePolitica">10sp</dimen>
+    <dimen name="marginBottom">15dp</dimen>
+    <dimen name="texto">15dp</dimen>
+    <dimen name="estrella">20dp</dimen>
+    <dimen name="estrellaMedia">30dp</dimen>
+    <dimen name="miniestrella">15dp</dimen>
+    <dimen name="estrellaGrande">46dp</dimen>
+    <dimen name="textSizeterConOferente">5sp</dimen>
+    <dimen name="textSizeterVentaMypet">20sp</dimen>
+    <dimen name="height_btn">40sp</dimen>
+    <dimen name="heat_btn">25sp</dimen>
+    <dimen name="textHead">15dp</dimen>
+    <dimen name="spacio">3dp</dimen>
+    <dimen name="bigespacio">12dp</dimen>
+    <dimen name="smallespacio">8dp</dimen>
+    <dimen name="padingeditext">4dp</dimen>
+    <dimen name="btn">30sp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="textoveinte">20sp</dimen>
+    <dimen name="textodiezocho">14sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="espacio_heig_guarderia">8sp</dimen>
+</resources>

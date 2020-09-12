@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.tactoapps.caran"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".registro.ClienteRegistro"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".registro.ClienteLogin"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".registro.IniciarRegistro"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".registro.RegistroComplementario"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".home.Home"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".registro.TerminosYCondiciones"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".home.DetalleContenido"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".home.ListaResenas"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".menu.Menu"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".menu.TerminosYCondiciones"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".home.VerTodo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".home.BuscarContenido"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".home.media.VideoScreen"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <service
+            android:name=".home.media.MusicService"
+            android:label="Music Service"
+            android:stopWithTask="true">
+        </service>
+
+        <activity android:name=".menu.EmpresasAsociadas">
+        </activity>
+    </application>
+
+</manifest>

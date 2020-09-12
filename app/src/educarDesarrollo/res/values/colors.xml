@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAzulClaro">#421d7d</color>
+    <color name="colorAzulOscuro">#ffffff</color>
+    <color name="colorRosado">#34F66F</color>
+    <color name="colorLetraBusquedaFondo">#34F66F</color>
+    <color name="colorLetraBusquedaTexto">#421d7d</color>
+
+
+
+</resources>

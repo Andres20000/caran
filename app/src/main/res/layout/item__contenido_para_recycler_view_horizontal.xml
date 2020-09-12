@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="140dp"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_marginLeft="2dp"
+              android:layout_marginRight="2dp"
+              android:id="@+id/principal"
+              android:background="@drawable/borde_negro_rectangular">
+
+
+
+
+    <com.tactoapps.caran.views.SquareImageView
+        android:id="@+id/foto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:padding="0dp"/>
+
+    <FrameLayout
+        android:id="@+id/layerrojo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:background="@drawable/forma_circulo"/>
+
+        <TextView
+            android:id="@+id/nota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextoCalificacion"
+            android:textSize="11sp"
+            android:text="3"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="bottom"
+        android:textColor="@color/colorBlanco"
+
+        android:background="@android:color/black"
+
+        android:alpha="0.82"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="0sp"
+        android:paddingBottom="0sp"
+        android:textSize="11sp"
+        android:text="Collar Multiusos y mago andiraderente con control remos"/>
+
+</FrameLayout>

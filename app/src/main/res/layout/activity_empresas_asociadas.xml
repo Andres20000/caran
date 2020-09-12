@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/coordinatorLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorBlanco"
+              android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlanco"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_btn"
+            android:orientation="horizontal"
+            android:background="@color/colorAzulClaro">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="6dp"
+                android:layout_marginLeft="12dp"
+                />
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlanco"
+                android:layout_weight="1"
+                android:text="Empresas asociadas"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/historial">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="6dp"
+                    android:layout_marginRight="12dp"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+                <TextView
+                    android:id="@+id/textoArriba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Estas son las empresas que te han asociado y que están compartiendo su contenido su contigo."/>
+
+                <ListView
+                    android:id="@+id/lista"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:divider="@color/colorBlanco"
+                    android:dividerHeight="0dp">
+                </ListView>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textoAbajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para ver el contenido de otras empresas, un administrador deberá vincularte. Pregunta a un personal administrativo, si están vinculados a eDucar."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/colorBlanco"
+                android:padding="30dp"
+                android:background="@color/colorRGB102"/>
+
+
+            <FrameLayout
+                android:id="@+id/vacio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="150dp"
+                        android:layout_gravity="center"
+                        android:text="Actualmente no te encuentras vinculado(a) a ninguna empresa. \n\n Para ver el contenido de una empresa, un administrador deberá vincularte. Pregunta a un personal administrativo si están vinculados a eDucar"
+                        android:textSize="14sp"/>
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

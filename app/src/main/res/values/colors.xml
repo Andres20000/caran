@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorVerdeAzulado">#00C1D5</color>
+    <color name="colorRojoBoton">#f9423a</color>
+    <color name="colorRojoBarra">#FA6861</color>
+    <color name="colorAzulPet">#4ec7ee</color>
+    <color name="colorAzulClaro">#26a9e0</color>
+    <color name="colorAzulOscuro">#12567f</color>
+    <color name="colorRosado">#eb008b</color>eb008b
+    <color name="colorNaranjaPet">#fdbc40</color>
+    <color name="colorNaranjaSuavePet">#fee3a3</color>
+    <color name="colorVerdePet">#8cc63f</color>
+    <color name="colorAmarillo">#FFFF00 </color>
+    <color name="colorTransparente">#00FFFFFF</color>
+    <color name="colorBlanco">#ffffff</color>
+    <color name="colorNegro">#303030</color>
+    <color name="colorRGB0">#000000</color>
+    <color name="colorRGB51">#333333</color>
+    <color name="colorRGB77">#4d4d4d</color>
+    <color name="colorRGB102">#666666</color>
+    <color name="colorRGB153">#999999</color>
+    <color name="colorRGB230">#e6e6e6</color>
+    <color name="colorRGB242">#f2f2f2</color>
+    <color name="colorRGB2555">#ffffff</color>
+    <color name="colorVerdeOscuro">#0d707c</color>
+    <color name="colorTextoCalificacion">#ffffff</color>
+    <color name="colorPuntoSeleccionado">#00C1D5</color>
+
+    <color name="colorLetraBusquedaFondo">#12567f</color>
+    <color name="colorLetraBusquedaTexto">#ffffff</color>
+
+</resources>

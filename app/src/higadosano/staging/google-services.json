@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "61775356961",
+    "firebase_url": "https://higadosano-pruebas.firebaseio.com",
+    "project_id": "higadosano-pruebas",
+    "storage_bucket": "higadosano-pruebas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61775356961:android:87df199d5ad56c07",
+        "android_client_info": {
+          "package_name": "com.tactoapps.higadosano.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61775356961-nf35sp3erugpq1havlv7l67jqne77dfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJtudCY8xTiZgR-20ZQqZ9I9BULbfIB0g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

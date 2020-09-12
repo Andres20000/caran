@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorAzulClaro"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingLeft="10sp"
+            android:text="Menú"
+            android:textColor="@color/colorBlanco"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="11dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:paddingLeft="15dp"
+                android:onClick="didTapPerfil">
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:padding="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/img_persona_azul"/>
+
+                <TextView
+                    android:id="@+id/lbPerfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mi perfil"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/texto"
+                    android:textColor="@color/colorRGB102" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearEmpresasAsociadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:paddingLeft="15dp"
+                android:onClick="didTapEmpresasAsociadas">
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:padding="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/img_empresa_asociada"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Empresas asociadas"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/texto"
+                    android:textColor="@color/colorRGB102" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:onClick="didTapRecientes">
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/img_lecturas_recientes"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lecturas recientes"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/texto"
+                    android:textColor="@color/colorRGB102" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:onClick="didTapFavoritos">
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/img_favoritos"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Favoritos"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/texto"
+                    android:textColor="@color/colorRGB102" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:onClick="didTapTop5">
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/img_top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top 5"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/texto"
+                    android:textColor="@color/colorRGB102" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:id="@+id/aviso"
+                android:onClick="didTapTerminos">
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/img_legal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Términos y condiciones"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/texto"
+                    android:textColor="@color/colorRGB102" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:paddingLeft="15dp"
+                android:onClick="didTapCerrarSesion">
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/img_cerrar_sesion"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cerrar sesión"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/texto"
+                    android:textColor="@color/colorRGB102"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0 (1)"
+        android:gravity="center"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="22dp"/>
+
+
+
+</LinearLayout>
+
+
+
+
+
